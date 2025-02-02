@@ -39,6 +39,7 @@ The backend model that handles text generation.
 - Processes the input text and generates a continuation.
 - Model is based on the SmolLM2 architecture. It is a ~135M parameter model. 
 - Model is trained on the Cosmopedia V2 dataset in Hugging Face.
+- To improve efficiency and reduce the number of parameters, weight sharing has been implemented between the embedding layer and the final head layer. 
 - **Model details**: 
    ``` 
    GPT(
