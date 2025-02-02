@@ -92,7 +92,145 @@ The backend model that handles text generation.
    │    │    └─RMSNorm: 3-13                               [1, 2048, 576]            576
    │    │    └─CausalSelfAttention: 3-14                   [1, 2048, 576]            884,736
    │    │    └─RMSNorm: 3-15                               [1, 2048, 576]            576
-   ...
+   │    │    └─LlamaMLP: 3-16                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-5                           [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-17                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-18                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-19                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-20                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-6                           [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-21                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-22                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-23                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-24                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-7                           [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-25                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-26                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-27                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-28                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-8                           [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-29                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-30                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-31                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-32                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-9                           [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-33                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-34                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-35                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-36                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-10                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-37                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-38                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-39                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-40                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-11                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-41                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-42                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-43                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-44                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-12                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-45                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-46                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-47                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-48                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-13                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-49                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-50                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-51                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-52                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-14                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-53                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-54                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-55                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-56                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-15                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-57                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-58                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-59                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-60                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-16                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-61                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-62                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-63                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-64                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-17                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-65                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-66                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-67                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-68                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-18                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-69                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-70                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-71                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-72                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-19                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-73                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-74                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-75                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-76                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-20                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-77                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-78                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-79                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-80                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-21                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-81                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-82                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-83                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-84                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-22                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-85                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-86                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-87                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-88                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-23                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-89                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-90                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-91                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-92                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-24                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-93                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-94                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-95                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-96                              [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-25                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-97                               [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-98                   [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-99                               [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-100                             [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-26                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-101                              [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-102                  [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-103                              [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-104                             [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-27                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-105                              [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-106                  [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-107                              [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-108                             [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-28                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-109                              [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-110                  [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-111                              [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-112                             [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-29                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-113                              [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-114                  [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-115                              [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-116                             [1, 2048, 576]            2,654,208
+   │    └─LlamaDecoderLayer: 2-30                          [1, 2048, 576]            --
+   │    │    └─RMSNorm: 3-117                              [1, 2048, 576]            576
+   │    │    └─CausalSelfAttention: 3-118                  [1, 2048, 576]            884,736
+   │    │    └─RMSNorm: 3-119                              [1, 2048, 576]            576
+   │    │    └─LlamaMLP: 3-120                             [1, 2048, 576]            2,654,208
+   ├─RMSNorm: 1-3                                          [1, 2048, 576]            576
+   ├─Linear: 1-4                                           [1, 2048, 49152]          28,311,552
+   =========================================================================================================
+   Total params: 162,826,560
+   Trainable params: 162,826,560
+   Non-trainable params: 0
+   Total mult-adds (M): 162.83
+   =========================================================================================================
    Input size (MB): 0.02
    Forward/backward pass size (MB): 3938.45
    Params size (MB): 651.31
